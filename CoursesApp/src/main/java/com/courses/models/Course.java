@@ -53,6 +53,18 @@ public class Course {
 	public void setStudent(Set<Student> student) {
 		this.student = student;
 	}
+	
+	public Course() 
+	{
+		System.out.println("Zero Arguement Constructor for hibernate");
+	}
 
+	@Override
+	public String toString() {
+		return "Course [course_id=" + course_id + ", course_name=" + course_name + ", price=" + price + ", student="
+				+ student + "]";
+	}
+	
+	
 	
 }
